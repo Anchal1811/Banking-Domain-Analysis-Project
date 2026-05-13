@@ -1,68 +1,50 @@
-Banking Domain Data Analysis Project
-📌 Project Overview
-This project focuses on Risk Analytics within the banking sector. The primary goal is to analyze customer data to understand financial behaviors and minimize the risk of financial loss (defaults) during the lending process. By leveraging a full data stack—Python, SQL, and Power BI—this project identifies key patterns in loan distribution, deposit health, and customer demographics.
+# Banking Domain Analysis: Financial Performance & Portfolio Insights
 
-📁 Repository Structure
-Banking.csv: The raw dataset containing client information, income, loans, and account balances.
+### **End-to-End Data Pipeline: SQL Server → Python → Power BI**
 
-banking.ipynb: Python notebook containing Exploratory Data Analysis (EDA) and data cleaning scripts.
+---
 
-bank.sql: SQL scripts for database schema creation and data querying.
+## 🎯 Project Objective
+This project focuses on analyzing the banking lifecycle—from customer acquisition to financial portfolio management. By processing raw transactional and demographic data, the objective is to provide stakeholders with clear visibility into **Loan Assets**, **Deposit Liabilities**, and **Customer Segment Performance** to optimize banking operations and risk assessment.
 
-bd.pbix: The interactive Power BI dashboard file.
+## 📊 1. Executive Summary Dashboard
+This view provides a high-level overview of the bank’s total footprint, allowing for a quick health check of the financial institution.
 
-Dashboard Images:
+* **Key Metric:** Consolidates total balances, average transaction values, and customer counts into a unified KPI set.
+* **Navigation:** Built with a modular design to toggle between high-level summaries and deep-dive financial reports.
 
-Summ.png: Summary View (KPIs)
+## 📈 2. Strategic Business Insights
+Based on the data analysis, the following high-impact insights were identified:
+* **Portfolio Diversification:** Analysis of the loan distribution highlights the concentration of risk across different loan types, allowing management to balance the portfolio between retail and business lending.
+* **Deposit Stability:** Identified trends in customer deposits that show which segments contribute most to the bank's liquidity, helping to design targeted retention strategies for high-net-worth individuals.
+* **Customer Demographics:** Insights into age groups and occupations suggest that specific professional sectors have a higher propensity for maintaining positive savings balances.
+* **Data-Driven Operations:** By moving from manual CSV tracking to an automated SQL-to-BI pipeline, reporting time is significantly reduced while maintaining data integrity.
 
-loan.png: Loan Distribution Analysis
+## 🔍 3. Data Analysis & Transformation
+To ensure the reliability of the dashboard, a structured data engineering approach was taken:
+* **ETL Process:** Raw data from `Banking.csv` was cleaned in Python to handle anomalies and ensure consistency across financial fields.
+* **Structured Querying:** `bank.sql` scripts were utilized to create optimized views, ensuring the Power BI model remains performant and scalable.
+* **Visual Storytelling:** Developed complex DAX measures in Power BI to calculate running totals, average balances, and year-over-year growth.
 
-deposit.png: Deposit and Liquidity Analysis
+## 🛠️ Technology Stack
+* **SQL Server:** For structured data storage, data cleaning, and creating analytical views.
+* **Python (Jupyter Notebook):** For Exploratory Data Analysis (EDA) and data profiling.
+* **Power BI:** For building interactive visualizations, data modeling, and UI/UX design.
 
-dashboard.png: Full Project Overview
+## 📂 Repository Contents
+* **bd.pbix:** Interactive Power BI file containing all analytical views.
+* **banking.ipynb:** Python code for data preprocessing and exploration.
+* **bank.sql:** SQL transformation and querying scripts.
+* **Banking.csv:** The source dataset for the analysis.
+* **Project Visuals:** `Summ.png`, `loan.png`, and `deposit.png` for quick reference.
 
-🛠️ Tools & Technologies
-Python: (Pandas, Matplotlib, Seaborn) for EDA and data profiling.
+---
 
-SQL (MySQL): For structured data storage and management.
+### 🖼️ Dashboard Preview
 
-Power BI: For building interactive visualizations and business intelligence reports.
+| **Summary View** | **Loan Analysis** | **Deposit Analysis** |
+| :--- | :--- | :--- |
+| ![Summary](Summ.png) | ![Loan](loan.png) | ![Deposit](deposit.png) |
 
-Excel/CSV: Source data format.
-
-📊 Key Insights & Findings
-Customer Financial Integrity: Analysis revealed a strong positive correlation between high balances in Checking Accounts and Savings Accounts. Customers maintaining multiple account types are statistically lower-risk for loans.
-
-Credit Card Usage: Approximately 70% of customers hold only one credit card, suggesting a conservative credit culture among the majority of the bank's client base.
-
-Risk Segmentation: By categorizing customers into "High," "Medium," and "Low" income bands, the analysis pinpointed that higher-income brackets hold the majority of business lending, while lower-income brackets are more susceptible to personal loan defaults.
-
-Geographic Trends: European and Asian demographics represent the largest segments of the bank’s loan portfolio, each exhibiting distinct repayment behaviors.
-
-📈 Outcomes & Results
-Risk Mitigation: Developed a risk-weighing model that helps the bank identify potential defaulters before loan approval.
-
-360° Financial View: Created a 4-page interactive dashboard providing stakeholders with real-time access to:
-
-Total Loan Value vs. Business Lending
-
-Total Deposits vs. Foreign Currency Holdings
-
-Customer Demographics (Age, Occupation, Nationality)
-
-Data-Driven Decision Making: The project provides a clear roadmap for the bank to adjust interest rates and credit limits based on the identified "Income Bands."
-
-🚀 How to Use
-Clone the Repo: git clone https://github.com/Anchal1811/Banking-Domain-Analysis-Project.git
-
-Run the Analysis: Open banking.ipynb in Jupyter Notebook or Google Colab to see the EDA process.
-
-Database Setup: Import bank.sql into your MySQL Workbench to view the structured data tables.
-
-View Dashboard: Open bd.pbix in Power BI Desktop to interact with the visualizations.
-
-Screenshots
-Summary View	Loan Analysis	Deposit Analysis
-Author: Anchal1811
-
-Project Link: GitHub Repo
+---
+**Contributor:** [Anchal1811](https://github.com/Anchal1811)
